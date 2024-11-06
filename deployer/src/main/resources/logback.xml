@@ -14,7 +14,7 @@
 		</discriminator>
 		<sift>
 			<appender name="FILE-${destination}" class="ch.qos.logback.core.rolling.RollingFileAppender">
-				<File>../logs/${destination}/${destination}.log</File>
+				<File>logs/${destination}/${destination}.log</File>
 				<rollingPolicy
 						class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 					<!-- rollover daily -->
@@ -41,7 +41,7 @@
 		</discriminator>
 		<sift>
 			<appender name="META-FILE-${destination}" class="ch.qos.logback.core.rolling.RollingFileAppender">
-				<File>../logs/${destination}/meta.log</File>
+				<File>logs/${destination}/meta.log</File>
 				<rollingPolicy
 						class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 					<!-- rollover daily -->
@@ -62,7 +62,7 @@
 	</appender>
 
 	<appender name="RocketmqClientAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>../logs/canal/rocketmq_client.log</file>
+		<file>logs/canal/rocketmq_client.log</file>
 		<rollingPolicy
 				class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- rollover daily -->
